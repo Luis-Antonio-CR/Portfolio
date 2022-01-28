@@ -1,0 +1,152 @@
+body{
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "header" "main";
+  height: 100vh;
+
+}
+
+/* ! HEADER */
+
+header{
+  grid-area: header;
+  height: 150px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border: 1px solid yellow;
+}
+
+header img{
+  grid-column: 1/2;
+  height: 120px;
+  margin: 15px 50px;
+}
+
+header ul{
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+  padding-right: 50px;
+}
+
+header ul li {
+  padding: 20px;
+}
+
+
+/* ! MAIN */
+
+
+main{
+  grid-area: main;
+  position: relative;
+  overflow: auto;
+}
+
+.main{
+  display: grid;
+  grid-template-columns: minmax(50px, 1fr) repeat(12, minmax(50px, 100px)) minmax(50px, 1fr);
+  grid-row-gap: 20px;
+}
+
+/* ! Box Hero */
+
+.box_hero{
+  grid-column: 1/-1;
+  height: 500px;
+  background: url("images/large.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* ! Box skills */
+
+.box_skills_img{
+  grid-column: 2/7;
+}
+
+.box_skills_img img{
+  width: 100%;
+}
+
+.box_skills_text{
+  grid-column: 7/14;
+}
+
+[class^="box_skills"]{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid green;
+}
+
+/* ! Box projects */
+
+
+
+.box_projects{
+  grid-column: 2/14;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(50px, 100px));
+  grid-template-rows: 20% 60% 20%;
+  align-items:center;
+  text-align: center;
+  border: 1px solid red;
+}
+
+.box_projects h2{
+  grid-column: 6/8;
+}
+
+.box_projects img{ height: 100%; margin: 0 auto;}
+
+.box_projects .projects_1{ grid-column: 1/5; }
+.box_projects .projects_2{ grid-column: 5/9; }
+.box_projects .projects_3{ grid-column: 9/13; }
+
+.box_projects button{
+  grid-column: 6/8;
+}
+
+
+/* ! Box end */
+
+.box_end{
+  grid-column: 1/-1;
+  height: 5vh;
+}
+
+/* ! FOOTER */
+
+footer{
+  min-height: 300px;
+  background: grey;
+  padding: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
