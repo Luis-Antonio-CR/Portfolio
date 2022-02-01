@@ -1,3 +1,6 @@
 .App{
-  
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "header" "main";
+  height: 100vh;
 }

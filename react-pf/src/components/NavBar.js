@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import '../styles/NavBar.css';
 import Logo from "../assets/Logo_LSC.png";
 
@@ -11,7 +11,7 @@ function NavBar() {
       <div className="Menu">
         <Link to="/" className="links"> Home</Link>
         <Link to="/aboutMe" className="links">About Me</Link>
-        <Link to="/project" className="links">Projects</Link>
+        <Link to="/projects" className="links">Projects</Link>
       </div>
 
     </div>
