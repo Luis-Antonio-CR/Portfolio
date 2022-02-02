@@ -1,5 +1,24 @@
+@import "colors.css";
+
 footer{
-  min-height: 300px;
-  background: grey;
-  padding: 50px;
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 150px;
+  background: var(--orange-clr);
+  padding: 50px 100px;
+}
+
+footer img{
+  height: 90px;
+  background: var(--dark-clr);
+  padding: 20px;
+  border-radius: 100%;
+}
+
+footer .footerIcons{
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
 }

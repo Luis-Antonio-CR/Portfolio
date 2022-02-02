@@ -1,5 +1,11 @@
+@import "colors.css";
+
+
 .NavBar{
   grid-area: header;
+  font-family: 'Jost', sans-serif;
+  background-color: var(--dark-clr);
+  color: var(--white-clr);
   height: 150px;
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -22,5 +28,10 @@
 }
 
 .App .Menu .links {
-  padding: 20px;
+  padding: 10px;
+  margin-right: 10px;
+  border-bottom: 3px solid var(--dark-clr);
+}
+.App .Menu .links:hover {
+  border-bottom: 3px solid var(--white-clr);
 }

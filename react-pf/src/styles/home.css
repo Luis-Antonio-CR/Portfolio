@@ -1,10 +1,28 @@
+@import "colors.css";
+
+/* ! Base Styles */
+
+h1,h2,h3,h4,h5,h6{margin-bottom: 10px;}
+
+p{text-align: justify;}
+
+.big_text{font-size: 70px;}
+.medium_text{font-size: 40px;}
+.normal_text{font-size: 18px; line-height: 25px;}
+.small_text{font-size: 14px;}
+
+.links{text-decoration: none; color: inherit;}
+
 .main{
+  font-family: 'Jost', sans-serif;
+  background-color: var(--dark-clr);
+  color: var(--white-clr);
   grid-area: main;
   position: relative;
   overflow: auto;
   display: grid;
   grid-template-columns: minmax(50px, 1fr) repeat(12, minmax(50px, 100px)) minmax(50px, 1fr);
-  grid-row-gap: 20px;
+  grid-row-gap: 100px;
 }
 
 /* ! Box Hero */
@@ -17,7 +35,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
 }
 
 /* ! Box skills */
@@ -32,6 +49,7 @@
 
 .box_skills_text{
   grid-column: 7/14;
+  padding-left: 50px;
 }
 
 [class^="box_skills"]{
@@ -77,8 +95,4 @@
 .box_end{
   grid-column: 1/-1;
   height: 5vh;
-}
-
-footer{
-  grid-column: 1/-1;
 }
