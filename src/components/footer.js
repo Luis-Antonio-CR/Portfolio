@@ -9,7 +9,7 @@ import Logo from '../assets/Logo_LSC.png';
 function Footer() {
   return (
     <footer>
-      <img src={Logo}/>
+      <img src={Logo} alt=""/>
       <div className="footerIcons">
         <GitHubIcon />
         <LinkedInIcon />
