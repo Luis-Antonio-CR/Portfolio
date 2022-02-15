@@ -6,7 +6,9 @@ import Logo from "../assets/Logo_LSC.png";
 function NavBar() {
   return (
     <div className="NavBar">
-      <img src={Logo} alt="" />
+      <Link to="/" className="links normal_text">
+        <img src={Logo} alt="" />
+      </Link>
 
       <div className="Menu">
         <Link to="/" className="links normal_text"> Home</Link>

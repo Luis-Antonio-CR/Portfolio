@@ -11,9 +11,15 @@ function Footer() {
     <footer>
       <img src={Logo} alt=""/>
       <div className="footerIcons">
-        <GitHubIcon />
-        <LinkedInIcon />
-        <InstagramIcon />
+        <a href="https://github.com/Luis-Antonio-CR" target="_blank" rel="noreferrer">
+          <GitHubIcon className="footerIcon"/>
+        </a>
+        <a href="https://www.linkedin.com/in/luis-antonio-c-73852bb5/" target="_blank" rel="noreferrer">
+          <LinkedInIcon className="footerIcon"/>
+        </a>
+        <a href="https://www.instagram.com/castaneda_luis_antonio/" target="_blank" rel="noreferrer">
+          <InstagramIcon className="footerIcon"/>
+        </a>
       </div>
     </footer>
   )

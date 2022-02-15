@@ -11,6 +11,8 @@ p{text-align: justify;}
 .normal_text{font-size: 18px; line-height: 25px;}
 .small_text{font-size: 14px;}
 
+.bold{font-weight: 600}
+
 .links{text-decoration: none; color: inherit;}
 
 .main{
@@ -29,7 +31,7 @@ p{text-align: justify;}
 
 .box_hero{
   grid-column: 1/-1;
-  height: 500px;
+  min-height: 500px;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -37,28 +39,92 @@ p{text-align: justify;}
   justify-content: center;
 }
 
-/* ! Box skills */
+/* ! Box aboutMe */
 
-.box_skills_img{
+.box_aboutMe_img{
   grid-column: 2/7;
 }
 
-.box_skills_img img{
+.box_aboutMe_img img{
   width: 100%;
 }
 
-.box_skills_text{
+.box_aboutMe_text{
   grid-column: 7/14;
   padding-left: 50px;
 }
 
-[class^="box_skills"]{
-  height: 400px;
+[class^="box_aboutMe"]{
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border: 1px solid green;
 }
+
+/* ! Box Presentation */
+
+.box_presentation_img{
+  grid-column: 9/14;
+}
+
+.box_presentation_img img{
+  width: 100%;
+}
+
+.box_presentation_text{
+  grid-column: 2/9;
+  padding-right: 50px;
+}
+
+[class^="box_presentation"]{
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid green;
+}
+
+.box_skills_A{
+  grid-column: 2/6;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 75px);
+}
+
+.box_skills_A .prova{border: 1px solid red;}
+
+.box_skills_A img{width: 100%;}
+
+.box_skills_A .skills_img_A1{grid-area: 1/2/2/3;}
+.box_skills_A .skills_img_A2{grid-area: 1/4/2/5;}
+.box_skills_A .skills_img_A3{grid-area: 2/3/3/4;}
+.box_skills_A .skills_img_A4{grid-area: 4/3/5/4;}
+
+.box_skills_B{
+  grid-column: 6/10;
+  height: 300px;
+  border: 5px solid var(--orange-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_skills_C{
+  grid-column: 10/14;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 75px);
+}
+
+.box_skills_C img{width: 100%;}
+
+.box_skills_C .skills_img_C1{grid-area: 1/2/2/3;}
+.box_skills_C .skills_img_C2{grid-area: 1/4/2/5;}
+.box_skills_C .skills_img_C3{grid-area: 3/2/4/3;}
+.box_skills_C .skills_img_C4{grid-area: 3/4/4/5;}
 
 /* ! Box projects */
 
@@ -66,7 +132,7 @@ p{text-align: justify;}
 
 .box_projects{
   grid-column: 2/14;
-  height: 400px;
+  min-height: 400px;
   display: grid;
   grid-template-columns: repeat(12, minmax(50px, 100px));
   grid-template-rows: 20% 60% 20%;
@@ -78,8 +144,6 @@ p{text-align: justify;}
 .box_projects h2{
   grid-column: 6/8;
 }
-
-.box_projects img{ height: 100%; margin: 0 auto;}
 
 .box_projects .projects_1{ grid-column: 1/5; }
 .box_projects .projects_2{ grid-column: 5/9; }

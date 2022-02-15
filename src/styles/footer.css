@@ -18,7 +18,21 @@ footer img{
 }
 
 footer .footerIcons{
-  width: 20%;
+  width: 30%;
   display: flex;
   justify-content: space-around;
+}
+
+footer .footerIcons .footerIcon{
+  font-size: 40px;
+  margin: 0 5px;
+}
+
+footer .footerIcons a:link, footer .footerIcons a:visited {
+  color: var(--white-clr);
+  text-decoration: none;
+}
+
+footer .footerIcons a:link:active, footer .footerIcons a:visited:active {
+  color: var(--white-clr);
 }
