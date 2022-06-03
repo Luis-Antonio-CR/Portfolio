@@ -24,6 +24,6 @@
   top: 0;
   padding: 112px 0;
   width: 250px;
-  background: hsla(200, 100%, 10%, .5);
+  background: hsla(200, 100%, 10%, .8);
   transition: opacity 300ms ease-in-out; 
 }

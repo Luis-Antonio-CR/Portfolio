@@ -15,6 +15,21 @@ p{text-align: justify;}
 
 .links{text-decoration: none; color: inherit;}
 
+.button{
+  padding: 10px;
+  background-color: var(--dark-clr);
+  border: 3px solid var(--orange-clr);
+  border-radius: 10px;
+  color: var(--orange-clr);
+  text-align: center;
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--orange-clr);
+  color: var(--dark-clr);
+}
+
 .main{
   font-family: 'Jost', sans-serif;
   background-color: var(--dark-clr);
@@ -41,25 +56,41 @@ p{text-align: justify;}
 
 /* ! Box aboutMe */
 
-.box_aboutMe_img{
-  grid-column: 2/7;
-}
-
-.box_aboutMe_img img{
-  width: 100%;
-}
-
-.box_aboutMe_text{
-  grid-column: 7/14;
-  padding-left: 50px;
-}
-
 [class^="box_aboutMe"]{
   min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border: 1px solid green;
+}
+
+.box_aboutMe_home_img{
+  grid-column: 2/7;
+  align-items: center;
+}
+.box_aboutMe_home_img img{
+  height: 100%;
+  box-shadow: 0px 0px 10px 4px #fff;
+}
+.box_aboutMe_home_text{
+  grid-column: 7/14;
+  padding-left: 50px;
+}
+.box_aboutMe_home_text .button{
+  margin-top: 10px;
+  width: 40%;
+  align-self: flex-end;
+}
+
+.box_aboutMe_img{
+  grid-column: 2/7;
+}
+.box_aboutMe_img img{
+  width: 100%;
+}
+.box_aboutMe_text{
+  grid-column: 7/14;
+  padding-left: 50px;
 }
 
 /* ! Box Presentation */
@@ -132,10 +163,11 @@ p{text-align: justify;}
 
 .box_projects{
   grid-column: 2/14;
-  min-height: 400px;
+  min-height: 450px;
   display: grid;
   grid-template-columns: repeat(12, minmax(50px, 100px));
-  grid-template-rows: 20% 60% 20%;
+  grid-template-rows: 20% 50% 20%;
+  grid-row-gap: 5%;
   align-items:center;
   text-align: center;
   border: 1px solid red;
@@ -149,7 +181,7 @@ p{text-align: justify;}
 .box_projects .projects_2{ grid-column: 5/9; }
 .box_projects .projects_3{ grid-column: 9/13; }
 
-.box_projects button{
+.box_projects .button{
   grid-column: 6/8;
 }
 

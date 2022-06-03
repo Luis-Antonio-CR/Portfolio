@@ -6,33 +6,32 @@ import '../styles/home.css';
 import cubeImg from '../assets/cube.jpg'
 import largeImg from '../assets/large.jpg'
 import regularImg from '../assets/regular.jpg'
+import imgAboutMe from '../assets/About_Me.jpeg'
 
 function Home() {
   return (
     <div className="main">
       <div className="box_hero" style={{backgroundImage: `url(${largeImg})`}}>
-        <h1 className="big_text">Text</h1>
+        <h1 className="big_text">I'm a Front-End Developer</h1>
         <h2 className="normal_text">Subtitle</h2>
       </div>
 
-      <div className="box_aboutMe_img">
-        <img src={regularImg} alt="" />
+      <div className="box_aboutMe_home_img">
+        <img src={imgAboutMe} alt="" />
       </div>
-      <div className="box_aboutMe_text">
+      <div className="box_aboutMe_home_text">
         <h2 className="medium_text">ABOUT ME</h2>
-        <p className="normal_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <button className="normal_text">
-          <Link to="/aboutMe" className="links">Know more</Link>
-        </button>
+        <p className="normal_text">
+          I'm a 24 years old guy from Italy. 
+        </p>
+        <Link to="/aboutMe" className="links button normal_text">Know more</Link>
       </div>
 
       <div className="box_projects">
         <h2 className="medium_text">PROJECTS</h2>
         <ProjectComp />
 
-        <button className="normal_text">
-          <Link to="/projects" className="links">For more projects</Link>
-        </button>
+        <Link to="/projects" className="links button normal_text">For more projects</Link>
       </div>
 
       <div id="like_button_container"></div>
