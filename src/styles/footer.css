@@ -29,10 +29,10 @@ footer .footerIcons .footerIcon{
 }
 
 footer .footerIcons a:link, footer .footerIcons a:visited {
-  color: var(--white-clr);
+  color: var(--dark-clr);
   text-decoration: none;
 }
 
 footer .footerIcons a:link:active, footer .footerIcons a:visited:active {
-  color: var(--white-clr);
+  color: var(--dark-clr);
 }

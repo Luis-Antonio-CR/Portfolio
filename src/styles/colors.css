@@ -2,6 +2,6 @@
 
 :root{
   --dark-clr: hsla(200, 100%, 10%, 1);
-  --white-clr: hsla(200, 100%, 95%, 1);
+  --white-clr: #8ecae6;
   --orange-clr: hsla(35, 100%, 50% ,1);
 }

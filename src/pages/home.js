@@ -11,8 +11,8 @@ import imgAboutMe from '../assets/About_Me.jpeg'
 function Home() {
   return (
     <div className="main">
-      <div className="box_hero" style={{backgroundImage: `url(${largeImg})`}}>
-        <h1 className="big_text">I'm a Front-End Developer</h1>
+      <div className="box_hero" style={{/*backgroundImage: `url(${largeImg})`*/}}>
+        <h1 className="big_text">I'm a Front-End Web Developer</h1>
         <h2 className="normal_text">Subtitle</h2>
       </div>
 
@@ -22,7 +22,7 @@ function Home() {
       <div className="box_aboutMe_home_text">
         <h2 className="medium_text">ABOUT ME</h2>
         <p className="normal_text">
-          I'm a 24 years old guy from Italy. 
+          I'm a 26 years old guy from Italy. 
         </p>
         <Link to="/aboutMe" className="links button normal_text">Know more</Link>
       </div>
