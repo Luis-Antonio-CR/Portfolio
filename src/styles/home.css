@@ -6,7 +6,7 @@ h1,h2,h3,h4,h5,h6{margin-bottom: 10px;}
 
 p{text-align: justify;}
 
-.big_text{font-size: 70px;}
+.big_text{font-size: 140px;}
 .medium_text{font-size: 40px;}
 .normal_text{font-size: 18px; line-height: 25px;}
 .small_text{font-size: 14px;}
@@ -52,6 +52,8 @@ p{text-align: justify;}
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  line-height: 180px;
 }
 
 /* ! Box aboutMe */
@@ -65,55 +67,52 @@ p{text-align: justify;}
 }
 
 .box_aboutMe_home_img{
-  grid-column: 2/7;
+  grid-column: 8/14;
   align-items: center;
 }
 .box_aboutMe_home_img img{
   height: 100%;
-  box-shadow: 0px 0px 10px 4px var(--white-clr);
 }
 .box_aboutMe_home_text{
-  grid-column: 7/14;
+  grid-column: 2/6;
   padding-left: 50px;
 }
 .box_aboutMe_home_text .button{
-  margin-top: 10px;
+  margin-top: 40px;
   width: 40%;
-  align-self: flex-end;
+  align-self: flex-start;
 }
 
 .box_aboutMe_img{
-  grid-column: 2/7;
+  grid-column: 10/14;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
-.box_aboutMe_img img{
-  width: 100%;
+.box_aboutMe_img svg{
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 .box_aboutMe_text{
-  grid-column: 7/14;
-  padding-left: 50px;
+  grid-column: 2/8;
 }
 
 /* ! Box Presentation */
 
-.box_presentation_img{
-  grid-column: 9/14;
-}
-
-.box_presentation_img img{
-  width: 100%;
-}
-
-.box_presentation_text{
-  grid-column: 2/9;
-  padding-right: 50px;
-}
-
-[class^="box_presentation"]{
-  min-height: 400px;
+.box_presentation{
+  align-items: center;
+  border: 1px solid green;
   display: flex;
   flex-direction: column;
+  grid-column: 4/12;
   justify-content: center;
-  border: 1px solid green;
+  min-height: 600px;
+}
+.box_presentation img{
+  height: 400px;
+  width:max-content;
+  margin-bottom: 50px;
 }
 
 .box_skills_A{
