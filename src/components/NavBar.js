@@ -11,9 +11,9 @@ function NavBar() {
       </Link>
 
       <div className="Menu">
-        <Link to="/" className="links normal_text"> Home</Link>
         <Link to="/aboutMe" className="links normal_text">About Me</Link>
         <Link to="/projects" className="links normal_text">Projects</Link>
+        <Link to="/contact" className="links normal_text"> Contact</Link>
       </div>
 
     </div>
