@@ -6,15 +6,21 @@ import imgPaloma from '../assets/Paloma_Odv.jpeg'
 export const projectsList = [
   {
     img: imgPet,
-    title: "Adopt a Pet"
+    title: "Adopt a Pet",
+    type: "REACT",
+    href: ""
   },
   {
     img: imgPaloma,
-    title: "Paloma Odv"
+    title: "Paloma Odv",
+    type: "HTML - CSS",
+    href: ""
   },
   {
     img: img1,
-    title: "Portfolio"
-  },
+    title: "Portfolio",
+    type: "REACT",
+    href: ""
+  }
 
 ]

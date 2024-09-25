@@ -1,0 +1,36 @@
+@import "colors.css";
+
+.projectBoxList{
+  grid-column: 2/14;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.projectBoxList > h2{
+  align-self: center;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.projectBox{
+  align-items: center;
+  box-shadow: 0 0 10px 5px var(--orange-clr);
+  border-radius: 10px;
+  color: var(--white-clr);
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 30px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.projectBox img{ width: 300px; height: 300px; margin: 50px 0;}
+
+.projectBox h2{
+  align-self: flex-start;
+}
+.projectBox p{
+  align-self: flex-start;
+}
